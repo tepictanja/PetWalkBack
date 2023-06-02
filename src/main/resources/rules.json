@@ -1,0 +1,179 @@
+{
+  "rules": [
+    {
+      "methods": ["PATCH"],
+      "pattern": "/korisnici/*/status",
+      "roles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "methods": ["PATCH"],
+      "pattern": "/korisnici/**",
+      "roles": [
+        "ADMIN", "CUVAR", "VLASNIK"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/korisnici",
+      "roles": [
+        "ADMIN", "CUVAR", "VLASNIK"
+      ]
+    },
+      {
+        "methods": [],
+        "pattern": "/korisnici/**",
+        "roles": [
+          "ADMIN","CUVAR", "VLASNIK"
+        ]
+      },
+    {
+      "methods": ["GET"],
+      "pattern": "/cijene/**",
+      "roles": [
+        "ADMIN", "CUVAR", "VLASNIK"
+      ]
+    },
+    {
+      "methods": [],
+      "pattern": "/cijene/**",
+      "roles": [
+        "ADMIN", "CUVAR"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/ljubimci/**",
+      "roles": [
+        "ADMIN", "CUVAR", "VLASNIK"
+      ]
+    },
+    {
+      "methods": [],
+      "pattern": "/ljubimci/**",
+      "roles": [
+        "ADMIN", "VLASNIK"
+      ]
+    },
+    {
+      "methods": [],
+      "pattern": "/lokacije/**",
+      "roles": [
+        "ADMIN", "CUVAR", "VLASNIK"
+      ]
+    },
+    {
+      "methods": [],
+      "pattern": "/mjesta/**",
+      "roles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/ponude/*",
+      "roles": [
+        "ADMIN", "CUVAR", "VLASNIK"
+      ]
+    },
+    {
+      "methods": [],
+      "pattern": "/ponude/**",
+      "roles": [
+        "ADMIN", "CUVAR"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/usluge/**",
+      "roles": [
+        "ADMIN", "CUVAR", "VLASNIK"
+      ]
+    },
+    {
+      "methods": [],
+      "pattern": "/usluge/**",
+      "roles": [
+        "ADMIN", "CUVAR"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/recenzije",
+      "roles": [
+        "ADMIN", "CUVAR", "VLASNIK"
+      ]
+    },
+    {
+      "methods": [],
+      "pattern": "/recenzije/**",
+      "roles": [
+        "ADMIN","VLASNIK"
+      ]
+    },
+    {
+      "methods": [],
+      "pattern": "/vrste/*",
+      "roles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/vrste/**",
+      "roles": [
+        "ADMIN", "CUVAR", "VLASNIK"
+      ]
+    },
+    {
+      "methods": ["POST"],
+      "pattern": "/izvjestaji",
+      "roles": [
+        "ADMIN", "CUVAR", "VLASNIK"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/izvjestaji",
+      "roles": [
+        "ADMIN","VLASNIK"
+      ]
+    },
+    {
+      "methods": [],
+      "pattern": "/izvjestaji/**",
+      "roles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "methods": ["POST"],
+      "pattern": "/problemi",
+      "roles": [
+        "ADMIN", "CUVAR", "VLASNIK"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/problemi",
+      "roles": [
+        "ADMIN", "CUVAR", "VLASNIK"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/problemi",
+      "roles": [
+        "ADMIN", "CUVAR", "VLASNIK"
+      ]
+    },
+    {
+      "methods": [],
+      "pattern": "/problemi/**",
+      "roles": [
+        "ADMIN"
+      ]
+    }
+  ]
+}
